@@ -3,7 +3,7 @@
 
 Name:           flatbuffers
 Version:        1.2.0
-Release:        1.strato.%{shorthash}
+Release:        2.strato.%{shorthash}
 Summary:        Memory Efficient Serialization Library from Google
 Packager:       Stratoscale Ltd.
 License:        ASL 2.0
@@ -64,5 +64,8 @@ cp -r python/build/lib/flatbuffers %{buildroot}/%{python2_sitelib}/
 
 %changelog
 
+* Sat Dec 19 2015 Rafael Buchbinder <rafi@stratoscale.com> - 1.2.0-2
+- Updated to latest master to take the Python binding fixes that
+  didn't make it to v1.2.0
 * Thu Nov 19 2015 Rafael Buchbinder <rafi@stratoscale.com> - 1.2.0-1
 - Initial version
